@@ -1,7 +1,7 @@
 import styles from './VoteStats.module.css';
 import { type Votes } from '../../types/votes';
 
-interface VotesStatsProps {
+interface VoteStatsProps {
   votes: Votes;
   totalVotes: number;
   positiveRate: number;
@@ -11,7 +11,7 @@ export default function VoteStats({
   votes,
   totalVotes,
   positiveRate,
-}: VotesStatsProps) {
+}: VoteStatsProps) {
   return (
     <div className={styles.container}>
       <p className={styles.stat}>
